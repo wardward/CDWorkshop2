@@ -19,7 +19,7 @@ public class QueryProcessor {
         }
         if (query.contains("what is")) {
         	String[] result = query.split(" ");
-            return result[2] + result[4];
+            return result[3] + result[5];
         }
         return "";
     }
