@@ -5,6 +5,9 @@ public class QueryProcessor {
     public String process(String query) {
     	System.out.println("QueryProcessor.process() Query: " + query);
     	
+    	if (query.contains("Spain")) {
+            return "peseta";
+        }
         if (query.contains("which of the following numbers is the largest")) {
         	String tmpResult[] = query.split(":");
         	System.out.println("largerst tmpResult: " + tmpResult[2]);
