@@ -13,7 +13,7 @@ public class QueryProcessor {
         	
         	Integer largest = -1;
         	for (int i=0; i<result.length; i++) {
-        		int temp = Integer.valueOf(result[i]);
+        		int temp = Integer.valueOf(result[i].trim());
         		if (temp > largest) {
         			largest = temp;
     			};
