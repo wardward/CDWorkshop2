@@ -14,8 +14,9 @@ public class QueryProcessor {
         }
         if (query.contains("which of the following numbers is the largest")) {
         	String tmpResult[] = query.split(":");
-        	System.out.println("largerst tmpResult: " + tmpResult[2]);
-        	String[] result = tmpResult[2].split(", ");
+        	System.out.println("tmpResult.lenghts: " + tmpResult.length);
+        	System.out.println("largerst tmpResult: " + tmpResult[tmpResult.length - 1]);
+        	String[] result = tmpResult[tmpResult.length - 1].split(", ");
         	System.out.println("largerst result: " + result[0]);
         	
         	Integer largest = -1;
