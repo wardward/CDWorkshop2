@@ -5,6 +5,10 @@ public class QueryProcessor {
     public String process(String query) {
     	System.out.println("QueryProcessor.process() Query: " + query);
     	
+    	if (query.contains("what colour is a banana")) {
+            return "yellow";
+        }
+    
     	if (query.contains("Spain")) {
             return "peseta";
         }
