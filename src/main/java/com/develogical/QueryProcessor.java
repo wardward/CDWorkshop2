@@ -19,7 +19,7 @@ public class QueryProcessor {
         	String[] result = tmpResult[0].split(", ");
         	System.out.println("largerst result: " + result[0]);
         	
-        	int largest = -1;
+        	Integer largest = -1;
         	for (int i=0; i<result.length; i++) {
         		int temp = Integer.valueOf(result[i]);
         		if (temp > largest) {
@@ -27,7 +27,7 @@ public class QueryProcessor {
     			};
         	}
         	
-            return result[1];
+            return String.valueOf(largest);
         }
         if (query.contains("what is")) {
         	String[] result = query.split(" ");
