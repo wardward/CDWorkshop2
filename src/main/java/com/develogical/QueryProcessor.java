@@ -9,6 +9,9 @@ public class QueryProcessor {
         if (query.contains("ward")) {
             return "Ward is een Eclipse expert ;-)";
         }
+        if (query.contains("robert")) {
+            return "Robert is een Eclipse expert ;-)";
+        }
         return "";
     }
 }
