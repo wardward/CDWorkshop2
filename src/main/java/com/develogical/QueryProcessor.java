@@ -8,7 +8,9 @@ public class QueryProcessor {
     	if (query.contains("what colour is a banana")) {
             return "yellow";
         }
-    
+    	if (query.contains("which city is the Eiffel tower in")) {
+            return "Paris";
+        }
     	if (query.contains("Spain")) {
             return "peseta";
         }
