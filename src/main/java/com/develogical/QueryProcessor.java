@@ -22,7 +22,10 @@ public class QueryProcessor {
             return String.valueOf(largest);
         }
         if (query.contains("multiplied by")) {
+        	//63629770: what is 14 multiplied by 6
         	String[] result = query.split(" ");
+        	System.out.println("milti 1: " + result[3]);
+        	System.out.println("multi 2: " + result[6]);
             return String.valueOf(Integer.valueOf(result[3]) * Integer.valueOf(result[6]));
         }
         if (query.contains("what is")) {
