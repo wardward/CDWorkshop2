@@ -4,15 +4,7 @@ public class QueryProcessor {
 
     public String process(String query) {
     	System.out.println("QueryProcessor.process() Query: " + query);
-        if (query.contains("SPA2012")) {
-            return "SPA is a conference";
-        }
-        if (query.contains("ward")) {
-            return "Ward is een Eclipse expert ;-)";
-        }
-        if (query.contains("robert")) {
-            return "Robert is een teamcity expert ;-)";
-        }
+    	
         if (query.contains("which of the following numbers is the largest")) {
         	String tmpResult[] = query.split(".*:.*: ");
         	System.out.println("largerst tmpResult: " + tmpResult[0]);
@@ -28,6 +20,15 @@ public class QueryProcessor {
         	}
         	
             return String.valueOf(largest);
+        }
+        if (query.contains("SPA2012")) {
+            return "SPA is a conference";
+        }
+        if (query.contains("ward")) {
+            return "Ward is een Eclipse expert ;-)";
+        }
+        if (query.contains("robert")) {
+            return "Robert is een teamcity expert ;-)";
         }
         if (query.contains("what is")) {
         	String[] result = query.split(" ");
