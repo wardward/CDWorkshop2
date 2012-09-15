@@ -21,10 +21,14 @@ public class QueryProcessor {
         	
             return String.valueOf(largest);
         }
+        if (query.contains("multiplied by")) {
+        	String[] result = query.split(" ");
+            return String.valueOf(Integer.valueOf(result[3]) * Integer.valueOf(result[6]));
+        }
         if (query.contains("what is")) {
         	String[] result = query.split(" ");
             return String.valueOf(Integer.valueOf(result[3]) + Integer.valueOf(result[5]));
-        }        
+        }
         if (query.contains("SPA2012")) {
             return "SPA is a conference";
         }
