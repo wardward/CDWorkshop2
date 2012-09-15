@@ -14,7 +14,19 @@ public class QueryProcessor {
             return "Robert is een teamcity expert ;-)";
         }
         if (query.contains("which of the following numbers is the largest")) {
-        	String[] result = query.split(", ");
+        	String tmpResult[] = query.split(".*:.*: ");
+        	System.out.println("largerst tmpResult: " + tmpResult[0]);
+        	String[] result = tmpResult[0].split(", ");
+        	System.out.println("largerst result: " + result[0]);
+        	
+        	int largest = -1;
+        	for (int i=0; i<result.length; i++) {
+        		int temp = Integer.valueOf(result[i]);
+        		if (temp > largest) {
+        			largest = temp;
+    			};
+        	}
+        	
             return result[1];
         }
         if (query.contains("what is")) {
