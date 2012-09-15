@@ -10,7 +10,7 @@ public class QueryProcessor {
             return "Ward is een Eclipse expert ;-)";
         }
         if (query.contains("robert")) {
-            return "Robert is een Eclipse expert ;-)";
+            return "Robert is een teamcity expert ;-)";
         }
         return "";
     }
