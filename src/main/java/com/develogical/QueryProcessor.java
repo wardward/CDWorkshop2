@@ -13,6 +13,10 @@ public class QueryProcessor {
         if (query.contains("robert")) {
             return "Robert is een teamcity expert ;-)";
         }
+        if (query.contains("which of the following numbers is the largest")) {
+        	String[] result = query.split(", ");
+            return result[1];
+        }
         return "";
     }
 }
